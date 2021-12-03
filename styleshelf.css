@@ -1,0 +1,13 @@
+.wrapper {
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.content {
+  font-size: 2rem;
+  padding: 3rem;
+  border-radius: 1rem;
+}

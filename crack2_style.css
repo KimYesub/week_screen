@@ -1,0 +1,32 @@
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+  cursor: pointer;
+  background-color: black;
+  -webkit-tap-highlight-color:  rgba(255, 255, 255, 0); 
+}
+ @font-face {
+    font-family: 'ImcreSoojin';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.3/ImcreSoojin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+#canvas {
+  background-image: url(http://img.fliptab.io/space_galaxy/1920x1200/125822212.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+#note {
+  opacity: .5;
+  color: white;
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  user-select: none;
+}

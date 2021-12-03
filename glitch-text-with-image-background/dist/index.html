@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Glitch text with image background</title>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet"><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Montserrat'><link rel="stylesheet" href="./style.css">
+<script language="JavaScript">
+		var randomNumber = 0;
+		function change() {
+			randomNumber = Math.floor(Math.random() * 500) + 1;
+			loc.style.top = randomNumber;
+			randomNumber = Math.floor(Math.random() * 500) + 1;
+			loc.style.left = randomNumber;
+		}
+	</script>
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="center">
+  <h1 class="center__text glitch is-glitching" data-text="Week Screen">Week Screen</h1>
+</div>
+<!-- partial -->
+  
+  <div id="loc" style="position:absolute; left:350px; top:300px; width:50px; height:50px;">
+		<form>
+			<input type="button" value="press" onMouseOver="change()" onClick="alert('pressed')">
+		</form>
+	</div>
+
+
+</body>
+</html>

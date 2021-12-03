@@ -1,0 +1,106 @@
+@font-face {
+    font-family: 'IBMPlexSansKR-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-07@1.0/IBMPlexSansKR-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+article {
+  max-width: 1920px;
+  margin: 2em auto;
+  overflow: hidden;
+  position: relative;
+  min-height: 4em;
+  font-family: 'IBMPlexSansKR-Regular'
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  overflow: hidden;
+}
+html:hover span, body:hover span {
+  display: none;
+}
+
+canvas {
+  cursor: crosshair;
+}
+
+.example-left {
+  white-space: nowrap;
+  position: absolute;
+  text-transform: uppercase;
+ 
+}
+
+.example-left {
+  -webkit-animation: mymove 120s linear infinite; /* Safari 4.0 - 8.0 */
+
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+  from {
+    left: 0;
+  }
+  to {
+    left: -3500px;
+  }
+}
+
+@keyframes mymove {
+  from {
+    left: 0;
+  }
+  to {
+    left: -3500px;
+  }
+}
+
+
+.example-right {
+  white-space: nowrap;
+  position: absolute;
+  opacity: 1;
+  text-transform: uppercase;
+}
+
+.example-right {
+  -webkit-animation: urmove 60s linear infinite; /* Safari 4.0 - 8.0 */
+  white-space: nowrap;
+  animation: urmove 60s linear infinite alternate;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes urmove {
+  from {
+    right: 1000;
+  }
+  to {
+    right: -3000px;
+  }
+}
+
+@keyframes urmove {
+  from {
+    right: 1000;
+  }
+  to {
+    right: -3000px;
+  }
+}
+
+
+@keyframes early 
+{ from { opacity:1; } to { opacity:0; } }
+
+.early {
+    animation:fadeIn ease-in 1; /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+
+    animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+
+    animation-duration:1s;
+    animation-delay: 1.5s
+}
